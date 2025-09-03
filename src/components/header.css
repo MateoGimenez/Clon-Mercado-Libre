@@ -1,0 +1,219 @@
+header{
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:  rgb(255, 230, 0);
+    position: relative;
+    border: 0;
+    box-shadow: rgba(255, 230, 0, 0.9) 0 6px 10px;
+}
+
+a{
+    text-decoration: none;
+}
+
+.nav-header{
+    width: auto;
+    border: 3px solid red;
+    display: grid;
+    grid-template-columns: 162px minmax(340px, 588px) minmax(350px, 390px);
+    grid-template-rows: 40px 28px;
+    grid-column-gap: 20px;
+    grid-row-gap: 12px;
+    padding: 8px 10px 12px 10px;
+    row-gap: 12px;;
+    justify-content: center;
+}
+
+.contenedor-logo{
+    display: flex;
+    align-items: center;
+    margin-left: 8px;
+}
+
+.logo{
+    overflow: hidden;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-image: url("/public/logo.mercadoLibre.webp");
+    height: 35px;
+    width: 135px;
+    display: flex;
+    position: static;
+}
+
+
+
+.contenedor-input{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: 0;
+}
+.contenedor-input input{
+    width: 100%;
+    height: 40px;
+    font-size: 16px;
+    border-radius: 2px;
+    background-color: #fff;
+    font-family: inherit;
+    padding: 10px 60px 10px 15px;
+    border-style: solid;
+    border-color: rgba(0, 0, 0, 0);
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, .2);
+    border-width: 1.5px;
+}
+
+.contenedor-input button {
+ padding: 7px;
+    position: absolute;
+    z-index: 1000;
+    color: rgba(0, 0, 0, .9);
+    font-size: 16px;
+    margin: 0;
+    font-family: inherit;
+    background-color: #fff;
+    display: flex;
+    cursor: pointer;
+    right: 0;
+    overflow: hidden;
+    border: none;
+    border-radius: 0 4px 4px 0;
+}
+
+.contenedor-input button:hover{
+    background-color: #efefef;
+}
+
+.contenedor-input button::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    width: 1px;   /* ancho del corte */
+    height: 60%;  /* alto del corte visible */
+    background: rgba(128, 128, 128, 0.39);
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+}
+
+.oferta{
+    background-image: url("/public/ofertaMeli.webp");
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    display: inline-block;
+}
+
+
+.contenedor-ubicacion {
+    height: 40px;
+    display: flex;
+    align-items: center;
+    position: relative;
+    justify-content: center;
+}
+
+.contenedor-ubicacion a{
+    padding: 0 8px;
+}
+.contenedor-ubicacion p {
+  font-size: 13px;
+  color: #333;
+}
+
+.contenedor-ubicacion a :first-child{
+    position: static;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    top: 1px;
+    font-size: 12px;
+    color: rgba(0, 0, 0, .55);
+    display: block;
+    width: fit-content;
+    max-width: 140px;
+    left: 0;
+    padding: 0;
+    margin: 0;
+    line-height: 12px;
+}
+
+.contenedor-ubicacion a p:last-child{
+    overflow: hidden;
+    width: fit-content;
+    max-width: 140px;
+    margin: 0;
+    color: rgba(0,0,0, .8980392157);
+    font-size: 14px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.contenedor-ubicacion a::before{
+    content: "";
+    background-image: url("/public/ubicacion.png");
+    height: 22px;
+    width: 30px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.contenedor-opciones{
+    border: 2px solid;
+    padding: 4px;
+    margin: -4px;
+    height: 36px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.nav-menu{
+    width: 100%;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+.nav-menu-list{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    flex-wrap: wrap;
+}
+
+.nav-mnu .nav-menu-items .nav-menu-list{
+    display: flex;
+    justify-content: flex-end;
+    height: 28px;
+    margin-right: 15px;
+}
+
+.nav-menu-items{
+    line-height: 18px;
+    font-size: 14px;
+}
+
+.nav-menu-items a {
+    display: flex;
+    line-height: 18px;
+    box-sizing: border-box;
+    position: relative;
+    padding-right: 14px;
+}
+
+
+.contenedor-user{
+    border: 2px solid;
+    height: 40px;
+}

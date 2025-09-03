@@ -1,0 +1,9 @@
+*{
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body{
+  background: #efefef;
+  font-family: "Proxima Nova", -apple-system, Roboto, Arial, sans-serif, sans-serif;
+}
