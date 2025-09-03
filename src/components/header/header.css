@@ -1,6 +1,6 @@
 header{
     width: 100%;
-    height: 100px;
+    height: 6.25rem; /*100px */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -16,7 +16,6 @@ a{
 
 .nav-header{
     width: auto;
-    border: 3px solid red;
     display: grid;
     grid-template-columns: 162px minmax(340px, 588px) minmax(350px, 390px);
     grid-template-rows: 40px 28px;
@@ -169,7 +168,6 @@ a{
 }
 
 .contenedor-opciones{
-    border: 2px solid;
     padding: 4px;
     margin: -4px;
     height: 36px;
@@ -189,7 +187,6 @@ a{
     justify-content: center;
     align-items: center;
     list-style: none;
-    flex-wrap: wrap;
 }
 
 .nav-mnu .nav-menu-items .nav-menu-list{
@@ -206,14 +203,76 @@ a{
 
 .nav-menu-items a {
     display: flex;
+    color: #333;
     line-height: 18px;
     box-sizing: border-box;
     position: relative;
     padding-right: 14px;
+    transition: color .3s ease-out;
 }
 
-
 .contenedor-user{
-    border: 2px solid;
     height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-user-menu{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    list-style: none;
+}
+
+.nav-user-item{
+    padding: 1px 2px;
+}
+
+.nav-user-perfil{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.nav-user-perfil img{
+    height: 1.2rem;
+    width: 1.2rem;
+    margin-right: 3px;
+    border-radius: 50%;
+}
+
+.nav-user-perfil::before{
+    content: ">";
+    position: absolute;
+    right: -10px;
+    top: 3px;
+    transform: rotate(90deg);
+    color: rgba(0, 0, 0, 0.3);
+}
+
+.nav-user-item a{
+    position: relative;
+    display: flex;
+    height: auto;
+    color: rgba(0, 0, 0, .8980392157);
+    text-decoration: none;
+    padding: 0;
+    line-height: 18px;
+    border: none;
+    font-size: 14px;
+    font-weight: 400;
+    transition: color .3s ease-out;
+}
+
+@media(max-width : 768px){
+    .nav-menu-list{
+        flex-wrap: wrap;
+    }
+}
+
+a:hover{
+    color: gray;
 }

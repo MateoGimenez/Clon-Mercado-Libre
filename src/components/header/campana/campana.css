@@ -1,0 +1,21 @@
+.campana {
+  position: relative;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.campana img{
+    height: 1.5rem;
+    width: 1.5rem;
+}
+
+.campana .contador {
+  position: absolute;
+  top: -5px;
+  right: -2px;
+  background: red;
+  color: white;
+  font-size: 11px;
+  border-radius: 4px;
+  padding: 0px 5px;
+}

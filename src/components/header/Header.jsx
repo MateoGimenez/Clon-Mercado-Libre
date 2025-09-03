@@ -1,4 +1,6 @@
 import { useState } from "react";
+import { Campana } from "./campana/Campana";
+import {Carrito} from "./carrito/Carrito"
 import './header.css'
 export const Header = () =>{
     const [contador , setContador] = useState(0)
@@ -43,11 +45,14 @@ export const Header = () =>{
 
                 <div className="contenedor-user">
                     <nav className="nav-user-menu">
-                        <li className="nav-user-item">Mateo</li>
-                        <li className="nav-user-item">Mis Compras</li>
-                        <li className="nav-user-item">Favoritos</li>
-                        <li className="nav-user-item">campana</li>
-                        <li className="nav-user-item">carrito</li>
+                        <div className="nav-user-perfil">
+                            <img src="/public/messiconlentes.jpg" alt="foto perfil" />
+                            <li className="nav-user-item"><a href="">Mateo</a></li>
+                        </div>
+                        <li className="nav-user-item"><a href="">Mis Compras</a></li>
+                        <li className="nav-user-item"><a href="">Favoritos</a></li>
+                        <li className="nav-user-item"><a href=""><Campana/></a></li>
+                        <li className="nav-user-item"><a href=""><Carrito/></a></li>
                     </nav>
                 </div>
             </div>
