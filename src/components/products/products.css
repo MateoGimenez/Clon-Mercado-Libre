@@ -1,0 +1,101 @@
+.contenedor-products{
+    position: relative;
+    width: 100%;
+    margin-top: -150px;
+    padding: 10px 40px;
+    max-height: 400px;
+    z-index: 9999;
+    overflow: hidden;
+}
+
+
+.boton-izquierda {
+  position: absolute;
+  left: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  border: none;
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  font-size: 20px;
+  /* opacity: 0;  */
+  cursor: pointer;
+}
+
+.boton-derecha {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  border: none;
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+
+.carrusel-products{
+    display: flex;
+    padding: 22px 50px;
+    gap: 16px;
+}
+
+.card-products{
+    max-width: 200px;
+    max-height: 300px;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #eee;
+    border-radius: 8px;
+    background: #fff;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+    padding: 12px;
+    cursor: pointer;
+}
+
+.card-products img{
+    height: 150px;
+    width: 150px;
+    object-fit: contain;
+}
+
+.card-products h2{
+    font-size: .9rem;
+    font-family:sans-serif ;
+    color: #333;
+}
+
+
+.nombre-product {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.3;
+  margin-bottom: 6px;
+  text-align: left;
+  display: -webkit-box;       
+  -webkit-line-clamp: 2;       /* 👈 máximo 2 líneas */
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  width: 100%;                 
+}
+
+.precio-product{
+    color: gray;
+    font-size: 12px;
+    text-decoration: line-through;
+}
+
+.precioNuevo{
+    display: flex;
+    gap: 5px;
+}
+
+.descuento-product , .envio-product{
+    color: #00a650;
+}

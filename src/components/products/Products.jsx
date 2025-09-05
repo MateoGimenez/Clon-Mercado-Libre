@@ -4,7 +4,10 @@ export const Products = () => {
   const productos = [
     { motivo: 'Llevate tu favorito', nombre: "Teclado Mecánico Attack Shark X98pro 98% Inalámbrico Gasket", img: './public/products/teclado mecanicoinalambricoAula.webp', precio: 184615, descuento: 41, envio: 'envio gratis' },
     { motivo: 'Llevate tu favorito', nombre: "Teclado Mecánico Attack Shark X98pro 98% Inalámbrico Gasket", img: './public/products/teclado mecanicoinalambricoAula.webp', precio: 184615, descuento: 41, envio: 'envio gratis' },
-    // ...otros
+    { motivo: 'Llevate tu favorito', nombre: "Teclado Mecánico Attack Shark X98pro 98% Inalámbrico Gasket", img: './public/products/teclado mecanicoinalambricoAula.webp', precio: 184615, descuento: 41, envio: 'envio gratis' },
+    { motivo: 'Llevate tu favorito', nombre: "Teclado Mecánico Attack Shark X98pro 98% Inalámbrico Gasket", img: './public/products/teclado mecanicoinalambricoAula.webp', precio: 184615, descuento: 41, envio: 'envio gratis' },
+    { motivo: 'Llevate tu favorito', nombre: "ICONO", img: './public/products/teclado mecanicoinalambricoAula.webp', precio: 184615, descuento: 41, envio: 'envio gratis' },
+    { motivo: 'Llevate tu favorito', nombre: "ICONO", img: './public/products/teclado mecanicoinalambricoAula.webp', precio: 184615, descuento: 41, envio: 'envio gratis' },
   ]
 
   const productsLimpio = productos.map((item) => ({
@@ -17,6 +20,8 @@ export const Products = () => {
 
   return (
     <div className="contenedor-products">
+      <button className="boton-izquierda">‹</button>
+      <button className="boton-derecha">›</button>
       <div className="carrusel-products">
         {productsLimpio.map((item, index) => (
           <div className="card-products" key={index}>
@@ -24,8 +29,10 @@ export const Products = () => {
             <img src={item.img} alt="imagen producto" />
             <p className='nombre-product'>{item.nombre}</p>
             <nav className='precio-product'>{formatearPrecio(item.precio)}</nav>
-            <nav className='descuento-product'>-{item.descuento}%</nav>
-            <nav className="precioDescuento">{formatearPrecio(item.precioConDescuento)}</nav>
+            <div className="precioNuevo">
+              <nav className="precioDescuento">{formatearPrecio(item.precioConDescuento)}</nav>
+              <nav className='descuento-product'>-{item.descuento}% off</nav>
+            </div>
             <p className='envio-product'>{item.envio}</p>
           </div>
         ))}
