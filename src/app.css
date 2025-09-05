@@ -1,4 +1,4 @@
-main{
-    width: 100%;
-    height: calc(100vh - 100px);
+main {
+  display: block;
+  margin-top: 0; /* asegúrate de que no esté negativo */
 }
