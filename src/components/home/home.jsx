@@ -3,6 +3,7 @@ import "./home.css"
 
 export const Home = () => {
   const [indice, setIndice] = useState(0)
+  const [reinicio , setReinicio] = useState(false)
 
   const imagenes = [
     "./public/CarruselPromo1.webp",
@@ -14,10 +15,12 @@ export const Home = () => {
 
   const siguiente = () => {
     setIndice((prev) => (prev + 1) % imagenes.length)
+    setReinicio((r)=> !r)
   }
 
   const anterior = () => {
     setIndice((prev) => (prev - 1 + imagenes.length) % imagenes.length)
+    setReinicio((r)=> !r)
   }
 
   //Efecto autoplay
@@ -27,7 +30,7 @@ export const Home = () => {
     }, 4000) // cambia cada 4 segundos
 
     return () => clearInterval(intervalo) 
-  }, [imagenes.length])
+  }, [imagenes.length , reinicio])
 
   return (
     <section>
