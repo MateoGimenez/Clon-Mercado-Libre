@@ -175,6 +175,7 @@ a{
     align-items: center;
     justify-content: center;
     overflow: hidden;
+    position: relative;
 }
 
 .nav-menu{
@@ -187,6 +188,7 @@ a{
     justify-content: center;
     align-items: center;
     list-style: none;
+    position: relative;
 }
 
 .nav-mnu .nav-menu-items .nav-menu-list{
@@ -209,6 +211,15 @@ a{
     position: relative;
     padding-right: 14px;
     transition: color .3s ease-out;
+}
+
+.nav-menu-list:first-child::before{
+    content: ">";
+    position:absolute;
+    left: 142px;
+    top: 1.5px;
+    transform: rotate(90deg);
+    color: rgba(0, 0, 0, 0.3);
 }
 
 .contenedor-user{
