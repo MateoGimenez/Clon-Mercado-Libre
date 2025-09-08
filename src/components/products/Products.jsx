@@ -19,7 +19,9 @@ export const Products = () => {
     precioConDescuento: item.precio - (item.precio * item.descuento) / 100
   }))
 
-  const formatearPrecio = (valor) => new Intl.NumberFormat("es-AR", { style: "currency", currency: "ARS" }).format(valor);
+  const formatearPrecio = (valor) =>
+    new Intl.NumberFormat("es-AR", {style: "currency",currency: "ARS",minimumFractionDigits: 0,maximumFractionDigits: 0}).format(valor);
+
 
   const itemsPorVista = 4
   const maxIndice = Math.ceil(productos.length / itemsPorVista) - 1
@@ -46,7 +48,7 @@ export const Products = () => {
             <nav className='precio-product'>{formatearPrecio(item.precio)}</nav>
             <div className="precioNuevo">
               <nav className="precioDescuento">{formatearPrecio(item.precioConDescuento)}</nav>
-              <nav className='descuento-product'>-{item.descuento}%off</nav>
+              <nav className='descuento-product'>-{item.descuento}% OFF</nav>
             </div>
             <p className='envio-product'>{item.envio}</p>
           </div>
