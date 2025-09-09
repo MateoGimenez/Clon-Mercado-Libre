@@ -4,14 +4,14 @@ import './products.css'
 export const Products = () => {
   const [indice, setIndice] = useState(0)
   const productos = [
-    { motivo: 'Llevate tu favorito', nombre: "Teclado Mecánico Attack Shark X98pro 98% Inalámbrico Gasket", img: './public/products/teclado mecanicoinalambricoAula.webp', precio: 184615, descuento: 41, envio: 'envio gratis' },
-    { motivo: 'Llevate tu favorito', nombre: "Teclado Mecánico Attack Shark X98pro 98% Inalámbrico Gasket", img: './public/products/teclado mecanicoinalambricoAula.webp', precio: 184615, descuento: 41, envio: 'envio gratis' },
-    { motivo: 'Llevate tu favorito', nombre: "Teclado Mecánico Attack Shark X98pro 98% Inalámbrico Gasket", img: './public/products/teclado mecanicoinalambricoAula.webp', precio: 184615, descuento: 41, envio: 'envio gratis' },
-    { motivo: 'Llevate tu favorito', nombre: "Teclado Mecánico Attack Shark X98pro 98% Inalámbrico Gasket", img: './public/products/teclado mecanicoinalambricoAula.webp', precio: 184615, descuento: 41, envio: 'envio gratis' },
-    { motivo: 'Llevate tu favorito', nombre: "ICONO", img: './public/products/teclado mecanicoinalambricoAula.webp', precio: 184615, descuento: 41, envio: 'envio gratis' },
-    { motivo: 'Llevate tu favorito', nombre: "ICONO", img: './public/products/teclado mecanicoinalambricoAula.webp', precio: 184615, descuento: 41, envio: 'envio gratis' },
-    { motivo: 'Comienza otro', nombre: "ICONO", img: './public/products/teclado mecanicoinalambricoAula.webp', precio: 184615, descuento: 41, envio: 'envio gratis' },
-    { motivo: 'Comienza otro', nombre: "ICONO", img: './public/products/teclado mecanicoinalambricoAula.webp', precio: 184615, descuento: 41, envio: 'envio gratis' },
+    { motivo: 'Llevate tu favorito', nombre: "Teclado Mecánico Attack Shark X98pro 98% Inalámbrico Gasket", img: '/products/teclado mecanicoinalambricoAula.webp', precio: 184615, descuento: 41, envio: 'envio gratis' },
+    { motivo: 'Llevate tu favorito', nombre: "Teclado Mecánico Attack Shark X98pro 98% Inalámbrico Gasket", img: '/products/teclado mecanicoinalambricoAula.webp', precio: 184615, descuento: 41, envio: 'envio gratis' },
+    { motivo: 'Llevate tu favorito', nombre: "Teclado Mecánico Attack Shark X98pro 98% Inalámbrico Gasket", img: '/products/teclado mecanicoinalambricoAula.webp', precio: 184615, descuento: 41, envio: 'envio gratis' },
+    { motivo: 'Llevate tu favorito', nombre: "Teclado Mecánico Attack Shark X98pro 98% Inalámbrico Gasket", img: '/products/teclado mecanicoinalambricoAula.webp', precio: 184615, descuento: 41, envio: 'envio gratis' },
+    { motivo: 'Llevate tu favorito', nombre: "ICONO", img: '/products/teclado mecanicoinalambricoAula.webp', precio: 184615, descuento: 41, envio: 'envio gratis' },
+    { motivo: 'Llevate tu favorito', nombre: "ICONO", img: '/products/teclado mecanicoinalambricoAula.webp', precio: 184615, descuento: 41, envio: 'envio gratis' },
+    { motivo: 'Comienza otro', nombre: "ICONO", img: '/products/teclado mecanicoinalambricoAula.webp', precio: 184615, descuento: 41, envio: 'envio gratis' },
+    { motivo: 'Comienza otro', nombre: "ICONO", img: '/products/teclado mecanicoinalambricoAula.webp', precio: 184615, descuento: 41, envio: 'envio gratis' },
   ]
 
   const productsLimpio = productos.map((item) => ({

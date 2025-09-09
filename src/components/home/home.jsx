@@ -6,11 +6,11 @@ export const Home = () => {
   const [reinicio , setReinicio] = useState(false)
 
   const imagenes = [
-    "./public/CarruselPromo1.webp",
-    "./public/CarruselPromo2.webp",
-    "./public/CarruselPromo3.webp",
-    "./public/CarruselPromo4.webp",
-    "./public/CarruselPromo5.webp"
+    "/CarruselPromo1.webp",
+    "/CarruselPromo2.webp",
+    "/CarruselPromo3.webp",
+    "/CarruselPromo4.webp",
+    "/CarruselPromo5.webp"
   ]
 
   const siguiente = () => {

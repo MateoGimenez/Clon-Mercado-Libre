@@ -46,7 +46,7 @@ export const Header = () =>{
                 <div className="contenedor-user">
                     <nav className="nav-user-menu">
                         <div className="nav-user-perfil">
-                            <img src="/public/messiconlentes.jpg" alt="foto perfil" />
+                            <img src="/products/messiconlentes.jpg" alt="foto perfil" />
                             <li className="nav-user-item"><a href="">Mateo</a></li>
                         </div>
                         <li className="nav-user-item"><a href="">Mis Compras</a></li>
